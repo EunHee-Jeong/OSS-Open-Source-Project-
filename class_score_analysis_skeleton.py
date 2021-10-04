@@ -4,7 +4,6 @@ import statistics
 # 데이터를 읽어오는 함수
 def read_data(filename):
     data = []
-    # TODO
     with open(filename, 'r') as f:
         for line in f:  # 각 행을 리스트로 만듦
             values =  []   # 값을 담을 리스트
