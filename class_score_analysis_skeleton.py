@@ -23,8 +23,8 @@ def add_weighted_average(data, weight):
 
 def analyze_data(data):     # 데이터를 분석하는 부분
     mean = sum(data) / len(data)
-    squares = map(lambda x: x**2, data)
-    var = sum(squares) / len(data) - mean**2
+    squares = sum([datum**2 for datum in data])
+    var = squares / len(data) - mean**2
     median = statistics.median(data)
     return mean, var, median, min(data), max(data)  # 분석 결과 return
 
