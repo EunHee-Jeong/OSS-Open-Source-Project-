@@ -1,4 +1,10 @@
-### Individual Score
+### 1. 소스 코드 - []()
+<p>
+  코드 설명은 주석으로 달아 놓았습니다!
+</p>
+
+----------------------------------------------------
+### 2. Individual Score
 
 | Midterm | Final | Total |
 | ------- | ----- | ----- |
@@ -46,7 +52,7 @@
 | 45 | 0 | 14.400 |
 | 42 | 0 | 13.440 |
 
-### Exam Score Analysis
+### 3. Exam Score Analysis
 * Midterm
   * Mean: **74.209**
   * Variance: 632.817
