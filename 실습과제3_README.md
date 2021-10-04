@@ -1,4 +1,4 @@
-### 1. 소스 코드 - []()
+### 1. 소스 코드 - [class_score_analysis_skeleton.py](class_score_analysis_skeleton.py)
 <p>
   코드 설명은 주석으로 달아 놓았습니다!
 </p>
@@ -51,7 +51,7 @@
 | 21 | 0 | 6.720 |
 | 45 | 0 | 14.400 |
 | 42 | 0 | 13.440 |
-
+----------------------------------------------------
 ### 3. Exam Score Analysis
 * Midterm
   * Mean: **74.209**
