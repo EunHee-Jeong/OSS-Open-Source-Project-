@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 # MARK: Read all CSV files
 import glob, csv
 
