@@ -4,7 +4,7 @@
 </p>
 
 ----------------------------------------------------
-### 2. Individual Score
+### 2. Individual Score 
 
 | Midterm | Final | Total |
 | ------- | ----- | ----- |
