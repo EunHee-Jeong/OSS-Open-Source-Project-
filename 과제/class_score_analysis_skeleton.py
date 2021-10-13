@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import statistics
-
+ 
 # 데이터를 읽어오는 함수
 def read_data(filename):
     data = []
