@@ -35,8 +35,7 @@ if __name__ == '__main__':
     plt.ylabel('final score')
     plt.legend()
     plt.grid()
-    # plt.savefig('class_score_scatter.png')
-    # plt.savefig('class_score_plot.png')
+    plt.savefig('class_score_scatter.png')
 
     # Plot total scores as a histogram
     plt.figure()
@@ -45,4 +44,6 @@ if __name__ == '__main__':
     plt.xlabel('total score')
     plt.ylabel('student')
     plt.legend()
+    plt.savefig('class_score_hist.png')
+
     plt.show()
