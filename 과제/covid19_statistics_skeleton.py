@@ -42,3 +42,4 @@ for idx, pop in enumerate(n_covid):
     # 신규 확진비율 = (신규 확진 / 전체 확진) * 100
     print('| %s | %d | %.1f | %.1f |' % (regions[idx], pop, ratio, norm_covid[idx]))
 print('')
+ 
