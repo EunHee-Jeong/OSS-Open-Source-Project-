@@ -28,8 +28,6 @@ for i in range(int((len(my_bus_data.columns)-3)/2)):
 bus_get_on
 
 # 2-3. 202번 버스의 하차 인원 컬럼만 추출
-num = '202'
-bus_st_202 = bus_st[bus_st['노선번호']==num]
 bus_get_off = pd.DataFrame()
 bus_get_off['노선번호'] = bus_st_202['노선번호']
 for i in range(int((len(my_bus_data.columns)-3)/2)):
