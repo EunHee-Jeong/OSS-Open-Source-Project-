@@ -25,6 +25,7 @@ bus_get_on = pd.DataFrame()
 bus_get_on['노선번호'] = bus_st_202['노선번호']
 for i in range(int((len(my_bus_data.columns)-3)/2)):
     bus_get_on[bus_st_202.columns[3+2*i]] = bus_st_202[bus_st_202.columns[3+2*i]]
+bus_get_on = bus_get_on.set_index('노선번호')
 bus_get_on
 
 # 2-3. 202번 버스의 하차 인원 컬럼만 추출
@@ -32,6 +33,7 @@ bus_get_off = pd.DataFrame()
 bus_get_off['노선번호'] = bus_st_202['노선번호']
 for i in range(int((len(my_bus_data.columns)-3)/2)):
     bus_get_off[bus_st_202.columns[4+2*i]] = bus_st_202[bus_st_202.columns[4+2*i]]
+bus_get_off = bus_get_off.set_index('노선번호')
 bus_get_off
 
 # 2-4. 노선별 평균 승하차 인원 추출하기
