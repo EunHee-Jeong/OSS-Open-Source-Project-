@@ -39,3 +39,12 @@ bus_get_off
 # 2-4. 노선별 평균 승하차 인원 추출하기
 bus_st = my_bus_data.groupby(['노선번호','역명']).mean().reset_index()
 bus_st
+
+# 3-1. 데이터 프레임으로 저장
+df = pd.DataFrame(index = bus_st_202['역명'])
+df['평균 승차 인원 수'] = bus_get_on.mean(axis=0).astype(int)
+df['평균 하차 인원 수'] = bus_get_off.mean(axis=0).astype(int)
+df
+
+# 3-2. 막대그래프 형태로 시각화
+df.plot.bar()
