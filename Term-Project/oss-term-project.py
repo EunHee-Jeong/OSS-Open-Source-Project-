@@ -22,6 +22,10 @@ my_bus_data
 bus_st = my_bus_data.groupby(['노선번호','역명']).mean().reset_index()
 bus_st
 
+# 2-3. 상위 5개 노선 출력
+bus_st = bus_st.sort_values(by = '승차총승객수', ascending = False) # 승하차가 비례함을 확인했기 때문에, 승차총승객수를 기준으로 잡음
+bus_st.head(5)
+
 # 2-4. 202번 버스의 승차 인원 컬럼만 추출
 num = '202'
 bus_st_202 = bus_st[bus_st['노선번호']==num]
