@@ -18,7 +18,11 @@ sorted(list(set(bus_data['하차총승객수'])))
 my_bus_data = bus_data.drop(columns={'버스정류장ARS번호', '등록일자'})
 my_bus_data
 
-# 2-2. 202번 버스의 승차 인원 컬럼만 추출
+# 2-2. 노선별 평균 승하차 인원 확인
+bus_st = my_bus_data.groupby(['노선번호','역명']).mean().reset_index()
+bus_st
+
+# 2-4. 202번 버스의 승차 인원 컬럼만 추출
 num = '202'
 bus_st_202 = bus_st[bus_st['노선번호']==num]
 bus_get_on = pd.DataFrame()
@@ -28,7 +32,7 @@ for i in range(int((len(my_bus_data.columns)-3)/2)):
 bus_get_on = bus_get_on.set_index('노선번호')
 bus_get_on
 
-# 2-3. 202번 버스의 하차 인원 컬럼만 추출
+# 2-5. 202번 버스의 하차 인원 컬럼만 추출
 bus_get_off = pd.DataFrame()
 bus_get_off['노선번호'] = bus_st_202['노선번호']
 for i in range(int((len(my_bus_data.columns)-3)/2)):
@@ -36,9 +40,6 @@ for i in range(int((len(my_bus_data.columns)-3)/2)):
 bus_get_off = bus_get_off.set_index('노선번호')
 bus_get_off
 
-# 2-4. 노선별 평균 승하차 인원 추출하기
-bus_st = my_bus_data.groupby(['노선번호','역명']).mean().reset_index()
-bus_st
 
 # 3-1. 데이터 프레임으로 저장
 df = pd.DataFrame(index = bus_st_202['역명'])
