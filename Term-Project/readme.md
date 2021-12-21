@@ -39,7 +39,8 @@
 ## 사용한 오픈소스
 
 - 데이터셋 (서울시 버스노선별 정류장별 승하차 인원 정보 (2021년 10월), 서울시 버스 정류소 좌표 데이터)
-- 지도 (folium 라이브러리)
+    - [서울 열린데이터광장](https://data.seoul.go.kr/)  제공
+- 지도 ([folium 라이브러리](https://python-visualization.github.io/folium/))
 
 
 
